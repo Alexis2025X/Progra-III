@@ -1,7 +1,7 @@
 from logging import exception
 
 from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QLineEdit, QRadioButton, QPushButton, \
-    QMessageBox
+    QMessageBox, QCheckBox
 import sys
 
 class ventana(QMainWindow):
@@ -31,7 +31,7 @@ class ventana(QMainWindow):
         self.lblResultado.setText("Resultado: ")
         self.lblResultado.move(100, 80)  # (x, y)
 
-        self.rdSuma = QRadioButton(self)
+        self.rdSuma = QRadioButton (self)
         self.rdSuma.setChecked(True)
         self.rdSuma.move(30, 100)
 
@@ -39,21 +39,21 @@ class ventana(QMainWindow):
         self.lblSuma.setText("Suma")
         self.lblSuma.move(60, 100)#(x, y)
 
-        self.rdResta = QRadioButton(self)
+        self.rdResta = QRadioButton (self)
         self.rdResta.move(30, 120)
 
         self.lblResta = QLabel(self)
         self.lblResta.setText("Resta")
         self.lblResta.move(60, 120)
 
-        self.rdMulti = QRadioButton(self)
+        self.rdMulti = QRadioButton (self)
         self.rdMulti.move(30, 140)
 
         self.lblMulti = QLabel(self)
         self.lblMulti.setText("Multiplicación")
         self.lblMulti.move(60, 140)
 
-        self.rdDivi = QRadioButton(self)
+        self.rdDivi = QRadioButton (self)
         self.rdDivi.move(30, 160)
 
         self.lblDivi = QLabel(self)
